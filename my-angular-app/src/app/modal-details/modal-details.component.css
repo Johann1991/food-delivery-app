@@ -1,0 +1,68 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker backdrop for better focus on the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the modal vertically and horizontally */
+    z-index: 1040;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px; /* Smoother border radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 500px; /* Auto width based on content, with min and max constraints */
+    max-width: 500px; /* Max width to ensure it looks good on all devices */
+    text-align: center; /* Center the text for a more modern look */
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+    color: #333; /* Darker text for better readability */
+    font-size: 24px; /* Larger font size for the title */
+  }
+  
+  .modal p {
+    color: #666; /* Lighter text for the body, improves readability */
+    line-height: 1.5; /* More space between lines */
+  }
+  
+  .modal button {
+    border: none;
+    width: 230px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Bootstrap primary color for the favorite button */
+    color: #fff;
+    margin-top: 20px; /* Space above the button */
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3; /* Darker shade on hover for the favorite button */
+  }
+  
+  .modal .close-button {
+    background-color: #6c757d; /* Bootstrap secondary color for the close button */
+  }
+  
+  .modal .close-button:hover {
+    background-color: #545b62; /* Darker shade on hover for the close button */
+  }
+
+  .favorite-star {
+    cursor: pointer;
+    margin-top: 10px;;
+    line-height: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .favorite-star:hover {
+    transform: scale(1.1); /* Slightly enlarge the star icon on hover */
+  }

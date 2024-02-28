@@ -1,0 +1,10 @@
+<!-- cart.component.html -->
+<div class="cart">
+    <h2>Your Cart</h2>
+    <ul>
+        <li *ngFor="let item of items">
+            {{ item.name}} - {{item.price}}
+        </li>
+    </ul>
+    <p>Total: {{ total }}</p>
+</div>

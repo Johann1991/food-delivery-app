@@ -1,0 +1,36 @@
+/* Style for the main cart container */
+.cart {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style for the cart heading */
+.cart h2 {
+    color: #333; /* Dark grey color for the text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the list of items in the cart */
+.cart ul {
+    list-style-type: none; /* Remove default list item markers */
+    padding: 0; /* Remove default padding */
+    margin: 0 0 20px 0; /* Space below the list */
+}
+
+/* Style for each item in the list */
+.cart li {
+    padding: 10px 0; /* Padding for each item */
+    border-bottom: 1px solid #eee; /* Light grey border for separation */
+}
+
+/* Style for the total price display */
+.cart p {
+    font-weight: bold; /* Bold font for emphasis */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #333; /* Dark grey color for the text */
+    text-align: right; /* Align the total to the right */
+}
+

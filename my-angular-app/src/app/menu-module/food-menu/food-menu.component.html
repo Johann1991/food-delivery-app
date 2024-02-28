@@ -1,0 +1,37 @@
+<!-- Container div for the menu -->
+<div class="menu">
+  <!-- Heading for the menu -->
+  <h2 class="menu-heading">Menu</h2>
+  <!-- Unordered list to display food items -->
+  <ul>
+      <!-- Use ng-container for the ngFor directive; it iterates over each item in the foodItems array -->
+      <ng-container *ngFor="let item of foodItems">
+          <!-- Apply ngIf on the li element; this only renders the list item if the current item is available -->
+          <li *ngIf="item.available">
+              <!-- Image for the food item; [src] binds the image source to item's imageUrl property, alt sets alternative text -->
+              <img class="product-images" [src]="item.imageUrl" alt="{{ item.name }}">
+              <!-- Div container for the details of the food item -->
+              <div class="details">
+                  <!-- Display the name of the food item -->
+                  <h3>{{ item.name }}</h3>
+                  <!-- Display the description of the food item -->
+                  <p>{{ item.description }}</p>
+                  <!-- Display the price of the food item -->
+                  <p>Price: {{ item.price }}</p>
+                  <i class="fas fa-star" *ngIf="item.isFavorite" style="color: yellow;"></i>
+                  <i class="far fa-star" *ngIf="!item.isFavorite"></i>
+                  <!-- Button to view details of the food item; triggers showDetails function on click -->
+                  <button class='button view-button' (click)="showDetails(item)">View Details</button>
+                  <!-- Button to add to cart -->
+                  <button class="button view-button" (click)="addToCart(item)">Add to Cart</button>
+              </div>
+          </li>
+      </ng-container>
+  </ul>
+</div>
+<app-details-modal 
+*ngIf="selectedItem" 
+[item]="selectedItem"
+(closeModal)="selectedItem = null"
+(markAsFavorite)="onMarkAsFavorite($event)">
+</app-details-modal>

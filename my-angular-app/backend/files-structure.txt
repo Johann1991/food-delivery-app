@@ -1,0 +1,16 @@
+your-spring-boot-project/
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ com/
+│  │  │     └─ example/
+│  │  │        └─ userregistration/
+│  │  │           └─ controller/
+│  │  │              └─ UserController.java
+│  ├─ test/
+│  │  ├─ java/
+│  │  │  └─ com/
+│  │  │     └─ example/
+│  │  │        └─ userregistration/
+│  │  │           └─ controller/
+│  │  │              └─ UserControllerTest.java

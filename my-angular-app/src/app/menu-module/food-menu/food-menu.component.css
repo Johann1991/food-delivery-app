@@ -1,0 +1,89 @@
+/* Reset default padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+}
+
+/* Style for the menu container */
+.menu { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style for unordered lists */
+ul { 
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for list items - Card layout */
+li {
+    background-color: #fff; /* Card background */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+    margin: 10px; /* Space between cards */
+    transition: transform 0.2s; /* Smooth transform on hover */
+    overflow: hidden; /* Ensures nothing spills out of the card */
+    width: 300px; /* Fixed width, adjust as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Style for product images */
+.product-images {
+    width: 100%; /* Make image fill the card width */
+    height: auto; /* Adjust height automatically */
+    border-top-left-radius: 10px; /* Rounded corners top */
+    border-top-right-radius: 10px;
+}
+
+/* Shared styles for buttons */
+.button {
+    background-color: teal;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    margin: 10px 5px;
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+.button:hover {
+    background-color: #005d5d; /* Darker shade on hover */
+}
+
+/* Styles for the details section within each list item */
+.details {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-heading {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Style adjustments for favorite star */
+.fas.fa-star, .far.fa-star {
+    margin: 10px 0; /* Add some space around the star */
+}
