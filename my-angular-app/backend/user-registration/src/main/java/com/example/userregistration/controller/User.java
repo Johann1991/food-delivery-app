@@ -1,4 +1,3 @@
-// User.java
 package com.example.userregistration.controller;
 
 public class User {
@@ -6,11 +5,9 @@ public class User {
     private String email;
     private String password;
 
-    // Default constructor
     public User() {
     }
 
-    // Getters and setters
     public String getUsername() {
         return username;
     }
